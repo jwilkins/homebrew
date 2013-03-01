@@ -18,7 +18,7 @@ class Skipfish < Formula
 
     system 'make'
     bin.install 'skipfish'
-    libexec.install %w(assets dictionaries)
+    libexec.install %w(assets dictionaries signatures config)
   end
 
   def caveats; <<-EOS.undent
